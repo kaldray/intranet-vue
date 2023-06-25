@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Server API Ready
+    link(rel="stylesheet" href="/index.css")
+  body
+
+    h1 Server API Ready (pug)
+
+    <pre>
+      | API Base : <code><span>#{apiPath}</span></code>
+      |
+      |
+      | <code>    GET <span>#{apiPath}collaborateurs</span></code>
+      | Renvoie la liste de tous les collaborateurs
+      | Exemple : <a href="#{apiPath}collaborateurs">#{apiPath}collaborateurs</a>
+      |
+      |
+      | <code>    GET <span>#{apiPath}collaborateur/{id}</span></code>
+      | Affiche le collaborateur via son {id}
+      | Exemple : <a href="#{apiPath}collaborateur/fbf322c0-fff1-48a3-8408-fec4c1ec4c7a">#{apiPath}collaborateur/fbf322c0-fff1-48a3-8408-fec4c1ec4c7a</a>
+      |
+      |
+      | <code>   POST <span>#{apiPath}collaborateurs</span></code>
+      | Crée un nouveau collaborateur
+      |
+      |
+      | <code>    PUT <span>#{apiPath}collaborateur/{id}</span></code>
+      | Modifie un collaborateur via son {id}
+      |
+      |
+      | <code> DELETE <span>#{apiPath}collaborateur/{id}</span></code>
+      | Supprime un collaborateur via son {id}
+      |
+      |
+      | <code> &lt;ANY*&gt; <span>#{apiPath}fail/{message}</span></code>
+      | Renvoie un code d'erreur 500 avec un {message}
+      | Exemple : <a href="#{apiPath}fail/Une erreur est survenue">#{apiPath}fail/Une erreur est survenue</a>
+    </pre>

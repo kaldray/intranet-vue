@@ -1,0 +1,37 @@
+<template>
+  <h1 class="text-h3 my-4">Liste des collaborateurs</h1>
+
+  <!-- Filtres de recherche -->
+  <v-row justify="center" align="center">
+    <v-col cols="12" sm="5" md="4">
+      <v-text-field class="mb-2" density="comfortable" label="Rechercher" />
+    </v-col>
+    <v-col cols="12" sm="5" md="4">
+      <v-select
+        class="mb-2"
+        density="comfortable"
+        label="Filtrer par :"
+        :items="[
+          { title: 'Nom', value: 'name' },
+          { title: 'Localisation', value: 'localisation' }
+        ]"
+      />
+    </v-col>
+  </v-row>
+
+  <!-- Séparateur -->
+  <v-divider class="mb-8" />
+
+  <!-- Liste des collaborateurs -->
+  <v-row v-if="users" justify="center">
+    <v-col cols="12" md="6" lg="4">
+      <!-- User Card -->
+    </v-col>
+  </v-row>
+</template>
+
+<style scoped>
+  h1 {
+    text-align: center;
+  }
+</style>

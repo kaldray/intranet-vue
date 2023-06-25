@@ -1,0 +1,55 @@
+<template>
+  <v-card elevation="1" rounded class="user-card ma-auto">
+    <v-row no-gutters align="center">
+      <v-col cols="12" sm="4">
+        <v-avatar image="https://i.pravatar.cc" size="auto" class="user-avatar" />
+      </v-col>
+      <v-col cols="12" sm="8">
+        <v-card-title>Prénom NOM</v-card-title>
+        <v-card-subtitle>
+          <v-icon color="grey-darken-1" icon="mdi-map-marker" size="small" />
+          Ville, Pays
+        </v-card-subtitle>
+        <v-card-text>
+          <div class="no-wrap">
+            <v-icon color="grey-darken-1" icon="mdi-email-outline" size="small" />
+            Email
+          </div>
+          <div class="no-wrap">
+            <v-icon color="grey-darken-1" icon="mdi-phone" size="small" />
+            Téléphone
+          </div>
+          <div class="no-wrap">
+            <v-icon color="grey-darken-1" icon="mdi-cake" size="small" />
+            JJ/MM/AAAA (XX ans)
+          </div>
+        </v-card-text>
+
+        <v-card-actions class="justify-center">
+          <v-btn variant="outlined" size="x-small" color="teal">Modifier</v-btn>
+          <v-btn variant="outlined" size="x-small" color="teal">Supprimer</v-btn>
+        </v-card-actions>
+      </v-col>
+    </v-row>
+  </v-card>
+</template>
+
+<style scoped>
+  .user-card {
+    max-width: 30rem;
+  }
+
+  @media screen and (max-width: 599px) {
+    .user-card {
+      text-align: center;
+    }
+  }
+
+  .no-wrap {
+    white-space: nowrap;
+  }
+
+  .user-avatar {
+    margin-left: 0.5rem;
+  }
+</style>

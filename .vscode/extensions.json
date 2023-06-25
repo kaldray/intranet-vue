@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "Vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
+    "sdras.vue-vscode-snippets",
+    "formulahendry.auto-rename-tag",
+    "rangav.vscode-thunder-client"
+  ]
+}

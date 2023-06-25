@@ -1,0 +1,45 @@
+<template>
+  <v-form validate-on="blur" class="mb-8">
+    <v-row no-gutters>
+      <v-col cols="12" sm="8" offset-sm="2" md="6" offset-md="3">
+        <!-- Civilité -->
+        <v-select
+          class="mb-2"
+          density="comfortable"
+          label="Civilité"
+          :items="[
+            { title: 'Homme', value: 'male' },
+            { title: 'Femme', value: 'female' }
+          ]"
+        />
+
+        <!-- Nom -->
+        <v-text-field class="mb-2" density="comfortable" label="Nom" />
+
+        <!-- Prénom -->
+        <v-text-field class="mb-2" density="comfortable" label="Prénom" />
+
+        <!-- Email -->
+        <v-text-field type="email" class="mb-2" density="comfortable" label="Email" />
+
+        <!-- Téléphone -->
+        <v-text-field type="tel" class="mb-2" density="comfortable" label="Téléphone" />
+
+        <!-- Date de naissance -->
+        <v-text-field type="date" class="mb-2" density="comfortable" label="Date de naissance" />
+
+        <!-- Ville -->
+        <v-text-field class="mb-2" density="comfortable" label="Ville" />
+
+        <!-- Pays -->
+        <v-text-field class="mb-2" density="comfortable" label="Pays" />
+
+        <!-- Photo (facultatif) -->
+        <v-text-field type="url" class="mb-2" density="comfortable" label="URL de la photo" />
+
+        <!-- VALIDATION -->
+        <v-btn type="submit" block color="teal" variant="flat"> Envoyer </v-btn>
+      </v-col>
+    </v-row>
+  </v-form>
+</template>

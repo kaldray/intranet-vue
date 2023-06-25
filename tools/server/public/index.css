@@ -1,0 +1,32 @@
+html {
+  font-family: sans-serif;
+}
+body {
+  display: grid;
+  place-items: center;
+}
+a:link,
+a:visited {
+  color: crimson;
+  text-decoration: underline;
+}
+a:hover,
+a:active {
+  color: orange;
+  text-decoration: underline;
+}
+
+pre {
+  font-size: 1.3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+pre > code {
+  font-family: monospace;
+  font-weight: bold;
+  color: teal;
+}
+
+pre > code > span {
+  font-weight: normal;
+}

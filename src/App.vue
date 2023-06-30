@@ -1,23 +1,18 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Navbar from './components/NavBar.vue'
+</script>
 
 <template>
   <v-layout>
     <header>
-      <!-- Navbar -->
-      Navbar
+      <Navbar />
     </header>
-
     <v-main>
       <v-container>
-        <!-- Contenu -->
-        Hello Vue Intranet
+        <router-view />
       </v-container>
     </v-main>
   </v-layout>
 </template>
 
-<style scoped>
-header {
-  background-color: teal;
-}
-</style>
+<style scoped></style>

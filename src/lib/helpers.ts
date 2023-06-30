@@ -18,6 +18,18 @@ export function formatBirthday(birthdate: string): string {
 }
 
 /**
+ * @param {string} birthdate La date d'anniversaire au format ISO (YYYY-MM-DD)
+ * @returns {String} Le jour de l'anniversaire dans l'année au format (DD/MM/YYYY)
+ */
+export function formatBirthdayDDMMYYYY(birthdate: string): string {
+  return new Date(birthdate).toLocaleDateString('fr-FR', {
+    month: '2-digit',
+    day: '2-digit',
+    year: '2-digit'
+  })
+}
+
+/**
  * @param {String} string La chaîne de caractère où supprimer des accents
  * @returns {String} La chaîne `string` sans les accents
  */

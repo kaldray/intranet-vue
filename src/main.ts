@@ -1,5 +1,5 @@
-import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
+import '@mdi/font/css/materialdesignicons.css'
 
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
@@ -7,6 +7,7 @@ import * as labsComponents from 'vuetify/labs/components' // Contains <v-skeleto
 
 import { createApp } from 'vue'
 import { createVuetify } from 'vuetify'
+import { router } from '@/router'
 import App from './App.vue'
 
 const app = createApp(App)
@@ -18,5 +19,7 @@ app.use(
     icons: { defaultSet: 'mdi' }
   })
 )
+
+app.use(router)
 
 app.mount('#app')
